@@ -8,7 +8,9 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 RUN /usr/local/bin/gem install fluent-plugin-elasticsearch \
-    /usr/local/bin/gem install fluent-plugin-parser
+    && /usr/local/bin/gem install fluent-plugin-parser \
+    && /usr/local/bin/gem install fluent-plugin-mail \
+    && /usr/local/bin/gem install fluent-plugin-jabber
 
 ADD fluent.conf /etc/fluent/
 
