@@ -12,7 +12,8 @@ RUN /usr/local/bin/gem install fluent-plugin-elasticsearch \
     && /usr/local/bin/gem install fluent-plugin-mail \
     && /usr/local/bin/gem install fluent-plugin-jabber \
     && /usr/local/bin/gem install fluent-plugin-record-modifier \
-    && /usr/local/bin/gem install fluent-plugin-record-reformer
+    && /usr/local/bin/gem install fluent-plugin-record-reformer \
+    && /usr/local/bin/gem install fluent-plugin-mongo
 
 ADD fluent.conf /etc/fluent/
 
